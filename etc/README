@@ -1,0 +1,1 @@
+get revisions of all files in some module and write it into var/vers/src/*.c
