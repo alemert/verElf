@@ -139,7 +139,7 @@ print OUT "
 /******************************************************************************/
 /* revision output function                                                   */
 /******************************************************************************/
-void revOut$majorDefine_$bouildBaseName() 
+void revOut${majorDefine}_${bouildBaseName}() 
 {
 " ;
   printf OUT "  %s %-30s %-20s) ;\n",  "printf(\"  %-15s %8d\\n\","       , 
