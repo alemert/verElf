@@ -97,6 +97,13 @@ foreach my $elfName ( @elfName )
 }
 
 die "can not handle elf name" unless defined $bouildName ;
+my $bouildBaseName ;
+if( $bouildName =~ /\./ )
+{
+  $bouildBaseName = $bouildName ;
+  $bouildBaseName =~ s/\..+$// ;
+}
+
 
 open OUT, ">$outFile" ;
 
@@ -132,7 +139,7 @@ print OUT "
 /******************************************************************************/
 /* revision output function                                                   */
 /******************************************************************************/
-void revOut$majorDefine() 
+void revOut$majorDefine$bouildBaseName() 
 {
 " ;
   printf OUT "  %s %-30s %-20s) ;\n",  "printf(\"  %-15s %8d\\n\","       , 
