@@ -135,6 +135,16 @@ print OUT "
 
 printf OUT "#define %-16s%8d\n","REV_".uc ${majorDefine}."_M",$maxRev ;
 
+if( $majorDefine eq 'ver4bin' )
+{
+  print OUT "
+void version()
+{
+  printf(\"version: \"MAJOR_VER\".\"MINOR_VER\".\"FUNC_VER\".\"FIX_VER\"\\n\") ;
+}
+";  
+}
+
 print OUT "
 /******************************************************************************/
 /* revision output function                                                   */
