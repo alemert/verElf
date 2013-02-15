@@ -145,7 +145,7 @@ if( $majorDefine eq 'ver4bin' )
   print OUT "
 void version()
 {
-  printf(\"version: \"MAJOR_VER\".\"MINOR_VER\".\"FUNC_VER\".\"FIX_VER\"\\n\") ;
+  printf(\"version: \"MAJOR_VER\".\"MINOR_VER\".\"FIX_VER\".\"BUILD_VER\"\\n\") ;
 }
 ";  
 }
