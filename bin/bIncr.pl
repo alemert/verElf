@@ -39,7 +39,8 @@ $ver++ ;
 print NEW "$ver\n" ;
 close NEW ;
 
-unlink $buildFile ;
-unlink $buildFile, "$buildFile.swp" ;
+unlink  $buildFile ;
+link   "$buildFile.swp", $buildFile;
+unlink "$buildFile.swp";
 
 
