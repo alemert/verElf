@@ -132,7 +132,9 @@ print OUT "
 // version include
 // ---------------------------------------------------------
 #include <include/version.h>
+" if $majorDefine eq 'ver4bin' ;
 
+print OUT "
 // ---------------------------------------------------------
 // major revision define
 // ---------------------------------------------------------
