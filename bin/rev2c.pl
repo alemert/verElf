@@ -159,7 +159,7 @@ print OUT "
 void revOut${majorDefine}_${bouildBaseName}() 
 {
 " ;
-  printf OUT "  %s %-30s %-20s) ;\n",  "printf(\"  %-15s %8d\\n\","       , 
+  printf OUT "  %s %-30s %-20s) ;\n",  "printf(\"%-17s %8d\\n\","       , 
                                        '"build revision '.$bouildName.'"',
                                        ', '."REV_".uc ${majorDefine}."_M" ;
 
@@ -172,6 +172,7 @@ foreach my $rev (@allRev)
                                        '"'.$src.'"'                ,
                                        ', '.$rev                   ;
 }
+print OUT "  printf(\"\\n\"); \n" ;
 
 print OUT "
 }
