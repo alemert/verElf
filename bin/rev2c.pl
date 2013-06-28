@@ -159,7 +159,7 @@ print OUT "
 void revOut${majorDefine}_${bouildBaseName}() 
 {
 " ;
-  printf OUT "  %s %-30s %-20s) ;\n",  "printf(\"%-21 %8d\\n\","       , 
+  printf OUT "  %s %-30s %-20s) ;\n",  "printf(\"%-21s %8d\\n\","       , 
                                        '"build revision '.$bouildName.'"',
                                        ', '."REV_".uc ${majorDefine}."_M" ;
 
